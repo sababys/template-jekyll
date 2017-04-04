@@ -1,0 +1,11 @@
+- link: Facebook
+  url:  https://www.facebook.com/TrulyProtect/
+  class: fa-facebook
+
+- link: LinkedIn
+  url:  https://www.linkedin.com/company/trulyprotect
+  class: fa-linkedin
+
+- link: Contanct
+  url: /contact
+  class: fa-envelope

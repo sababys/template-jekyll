@@ -1,0 +1,46 @@
+// --------------------------------------------------
+// Layout default
+// --------------------------------------------------
+
+@import "assets/vendor/motion-ui/motion-ui.scss";
+
+@include motion-ui-transitions;
+
+@include motion-ui-animations;
+header {
+  @include grid-row;
+  background-color: $light-gray;
+
+  nav {
+    @include grid-column;
+  }
+}
+
+.top-bar {
+  background-color: white;
+}
+
+.top-bar ul {
+  background-color: white;
+}
+
+footer {
+  @include grid-row;
+  background-color: $light-gray;
+
+  nav {
+    @include grid-column;
+  }
+}
+
+.alternate {
+
+  background-color:#1b6080;
+  filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#1b6080, endColorstr=#1BB8D1);
+  background-image:linear-gradient(to left, #1b6080 0%, #1BB8D1 42%,#1b6080 100%);
+  background-image:-webkit-linear-gradient(to left, #1b6080 0%, #1BB8D1 42%,#1b6080 100%);
+  background-image:-o-linear-gradient(to left, #1b6080 0%, #1BB8D1 42%,#1b6080 100%);
+  background-image:-ms-linear-gradient(to left, #1b6080 0%, #1BB8D1 42%,#1b6080 100%);
+  background-image:-webkit-gradient(linear, left bottom, right bottom, color-stop(0%,#1b6080), color-stop(42%,#1BB8D1),color-stop(100%,#1b6080));
+  background-image:-moz-linear-gradient(to left, #1b6080 0%, #1BB8D1 42%,#1b6080 100%);
+ }

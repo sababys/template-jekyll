@@ -1,0 +1,15 @@
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+
+.x-center {
+  position:absolute;
+  left:50%;
+  transform: translateX(-50%);
+}
+.y-center {
+  position:relative;
+  top:50%;
+  transform: translateY(-50%);
+}

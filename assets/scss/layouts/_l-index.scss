@@ -1,0 +1,105 @@
+// --------------------------------------------------
+// Layout index page
+// --------------------------------------------------
+
+main {
+  @include grid-row;
+  margin-top: 0;
+  //other elements
+  //@include grid-column;
+}
+
+.homepage-hero-module {
+    margin-top:0;
+    padding-top: 0;
+    border-right: none;
+    border-left: none;
+    position: relative;
+    max-height: 450px;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    //background: rgba(0,0,0,0.6);
+    width: 100%;
+    top:30%;
+    color:$white;
+    font-weight: bolder;
+    text-shadow: 4px 4px 4px #000000;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+.fullWidth {
+  width: 100%;
+  max-width:100%;
+  padding-left:0px;
+  padding-right:0px;
+}
+
+.visorItem {
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  background-color:#333333;
+filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#333333, endColorstr=#595959);
+background-image:-moz-linear-gradient(left, #333333 0%, #595959 42%,#333333 100%);
+background-image:linear-gradient(to left, #333333 0%, #595959 42%,#333333 100%);
+background-image:-webkit-linear-gradient(left, #333333 0%, #595959 42%,#333333 100%);
+background-image:-o-linear-gradient(left, #333333 0%, #595959 42%,#333333 100%);
+background-image:-ms-linear-gradient(left, #333333 0%, #595959 42%,#333333 100%);
+background-image:-webkit-gradient(linear, left bottom, right bottom, color-stop(0%,#333333), color-stop(42%,#595959),color-stop(100%,#333333));
+ color:$white;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+
+.slide-right {
+
+  @include mui-animation(slide(in, right), fade(0,1));
+  animation-duration: 1s;
+}
+
+.slide-left {
+
+  @include mui-animation(slide(in,left),  fade(0,1));
+  animation-duration: 1s;
+}
+
+.slide-up {
+  @include mui-animation(slide(in,up),  fade(0,1));
+  animation-duration: 1s;
+}
+
+.slide-fade {
+  @include mui-animation(fade(0,1));
+  animation-duration: 1s;
+}

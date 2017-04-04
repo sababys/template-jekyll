@@ -1,0 +1,11 @@
+- link: Home
+  url: /
+
+- link: Company
+  url: /company
+
+- link: Technology
+  url: /technology
+
+- link: Resources
+  url: /resources

@@ -1,0 +1,29 @@
+<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+  <button class="menu-icon" type="button" data-toggle></button>
+  <div class="title-bar-title">
+		<span class="right">TrulyProtect</span>
+	</div>
+</div>
+
+<div class="top-bar  slide-up" id="example-menu">
+  <div class="top-bar-left">
+    <ul class="dropdown menu vertical medium-horizontal">
+      <li class="menu-text"><img src="/assets/img/tp-logo-small.png" style="max-height:50px;"</li>
+      {% for item in site.data.nav-main %}
+				<li><a href="{{ item.url }}">{{ item.link }}</a></li>
+			{% endfor %}
+    </ul>
+  </div>
+  <div class="top-bar-right hide-for-small-only hide-for-medium-only" style="position:relative; top:15px;">
+    <ul class="menu">
+  		{% for item in site.data.nav-social %}
+				<a target="_blank" href="{{item.url}}">
+					<span class="fa-stack fa-lg fa-inverse">
+						<i class="fa fa-circle fa-stack-2x" style="color:#1BB8D1;"></i>
+						<i class="fa {{item.class}} fa-stack-1x"></i>
+					</span>
+				</a>
+			{% endfor %}
+    </ul>
+  </div>
+</div>

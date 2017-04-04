@@ -1,0 +1,49 @@
+# Site settings
+language:               ""
+title:                  "TrulyProtect"
+description:            "Site description"
+google-verification:    ""
+
+# Handling Reading
+include:
+  - ".htaccess"
+  - "_pages"
+
+exclude:
+  - "assets/js/app.js"
+  - "assets/scss/*.scss"
+  - "assets/vendor/foundation-sites/"
+  - "assets/vendor/jquery/"
+  - "assets/vendor/motion-ui/"
+  - "assets/vendor/phpmailer/**/*.html"
+  - "assets/vendor/what-input/"
+  - "bower.json"
+  - "composer.json"
+  - "composer.lock"
+  - "DOC.md"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "gulp"
+  - "gulpfile.js"
+  - "LICENSE.md"
+  - "Makefile"
+  - "node_modules"
+  - "npm-debug.log"
+  - "package.json"
+  - "README.md"
+  - "rev-manifest.json"
+
+# Plugins
+gems:             ["jekyll-sitemap", "jekyll-paginate"]
+
+# Conversion
+incremental:      true
+
+# Serving
+# url:            ""
+# baseurl:        "" # does not include hostname
+
+# Outputting
+permalink:        "/blog/:year/:title/"
+paginate_path:    "/blog/page:num"
+paginate:         5
